@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>เปิด VPN</title>
+  <style>
+    body { 
+      font-family: sans-serif; 
+      text-align: center; 
+      margin-top: 80px; 
+      background: #f9f9f9;
+    }
+    h1 { color: #333; }
+    .button {
+      display: inline-block;
+      padding: 15px 25px;
+      margin: 15px;
+      font-size: 18px;
+      border-radius: 10px;
+      text-decoration: none;
+      color: white;
+      transition: 0.2s;
+    }
+    .ios { background: #007aff; }     /* สีน้ำเงินแบบ iOS */
+    .ios:hover { background: #0051a8; }
+    .android { background: #3ddc84; } /* สีเขียวแบบ Android */
+    .android:hover { background: #2a995e; }
+  </style>
+</head>
+<body>
+  <h1>เลือกเปิด VPN</h1>
+  
+  <!-- ปุ่มสำหรับ iOS -->
+  <a class="button ios" 
+     href="openvpn://import-profile?url=https://USERNAME.github.io/vpn-page/myvpn.ovpn">
+    เปิด VPN (iOS)
+  </a>
+  
+  <!-- ปุ่มสำหรับ Android -->
+  <a class="button android" 
+     href="openvpn://import?url=https://USERNAME.github.io/vpn-page/myvpn.ovpn">
+    เปิด VPN (Android)
+  </a>
+</body>
+</html>
