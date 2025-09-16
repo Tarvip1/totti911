@@ -2,46 +2,60 @@
 <html lang="th">
 <head>
   <meta charset="UTF-8">
-  <title>เปิด VPN ก่อนเข้า totti911auto.com</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Splash Page VPN</title>
   <style>
-    body { 
-      font-family: sans-serif; 
-      text-align: center; 
-      margin-top: 80px; 
-      background: #f9f9f9;
+    body {
+      font-family: sans-serif;
+      background: linear-gradient(to bottom, #f0f4f8, #d9e2ec);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      text-align: center;
     }
-    h1 { color: #333; }
+    h1 {
+      color: #333;
+      margin-bottom: 40px;
+    }
     .button {
-      display: inline-block;
-      padding: 15px 25px;
+      display: block;
+      padding: 15px 30px;
       margin: 15px;
       font-size: 18px;
-      border-radius: 10px;
-      text-decoration: none;
+      border-radius: 12px;
       color: white;
+      text-decoration: none;
       transition: 0.2s;
     }
-    .ios { background: #007aff; }     
+    .ios { background: #007aff; }
     .ios:hover { background: #0051a8; }
-    .android { background: #3ddc84; } 
+    .android { background: #3ddc84; }
     .android:hover { background: #2a995e; }
+    .enter-site { background: #ff9500; }
+    .enter-site:hover { background: #cc7a00; }
   </style>
 </head>
 <body>
-  <h1>เปิด VPN ก่อนเข้า totti911auto.com</h1>
-  
+  <h1>เปิด VPN ก่อนเข้าเว็บ</h1>
+
   <!-- ปุ่มสำหรับ iOS -->
-  <a class="button ios" 
-     href="openvpn://import-profile?url=https://USERNAME.github.io/vpn-page/myvpn.ovpn">
+  <a class="button ios"
+     href="openvpn://import-profile?url=https://tarvip1.github.io/vpn-page/myvpn.ovpn">
     เปิด VPN (iOS)
   </a>
-  
+
   <!-- ปุ่มสำหรับ Android -->
-  <a class="button android" 
-     href="openvpn://import?url=https://USERNAME.github.io/vpn-page/myvpn.ovpn">
+  <a class="button android"
+     href="openvpn://import?url=https://tarvip1.github.io/vpn-page/myvpn.ovpn">
     เปิด VPN (Android)
   </a>
-  
-  <p>หลังจากเปิด VPN แล้ว คลิก <a href="https://totti911auto.com/" target="_blank">ที่นี่</a> เพื่อเข้าเว็บ</p>
+
+  <!-- ปุ่มเข้าเว็บหลัก -->
+  <a class="button enter-site" href="https://totti911auto.com/" target="_blank">
+    เข้าเว็บหลัก
+  </a>
 </body>
 </html>
